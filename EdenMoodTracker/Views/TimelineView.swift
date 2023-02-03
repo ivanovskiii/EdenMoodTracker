@@ -21,11 +21,49 @@ struct TimelineView: View {
                 List{
                     ForEach(mood) { mood in
                         NavigationLink(destination: Text("\(mood.mood ?? "Mood")")) {
-                            HStack{
-                                VStack(alignment: .leading, spacing: 6){
-                                    Text(mood.mood!)
-                                    
-                                }
+                            if(mood.mood=="Terrible"){
+                                Image("terrible")
+                                    .resizable()
+                                    .frame(maxWidth: 70, maxHeight: 70)
+                                Text(mood.mood!)
+                                    .fontWeight(.bold)
+                                    .foregroundColor(Color("edenBlue"))
+                            }
+                            if(mood.mood=="Bad"){
+                                Image("bad")
+                                    .resizable()
+                                    .frame(maxWidth: 70, maxHeight: 70)
+                                Text(mood.mood!)
+                                    .fontWeight(.bold)
+                                    .foregroundColor(Color("edenBabyBlue"))
+
+                            }
+                            if(mood.mood=="Meh"){
+                                Image("meh")
+                                    .resizable()
+                                    .frame(maxWidth: 70, maxHeight: 70)
+                                Text(mood.mood!)
+                                    .fontWeight(.bold)
+                                    .foregroundColor(Color("edenDarkMint"))
+
+                            }
+                            if(mood.mood=="Good"){
+                                Image("good")
+                                    .resizable()
+                                    .frame(maxWidth: 70, maxHeight: 70)
+                                Text(mood.mood!)
+                                    .fontWeight(.bold)
+                                    .foregroundColor(Color("edenPeach"))
+
+                            }
+                            if(mood.mood=="Amazing"){
+                                Image("amazing")
+                                    .resizable()
+                                    .frame(maxWidth: 70, maxHeight: 70)
+                                Text(mood.mood!)
+                                    .fontWeight(.bold)
+                                    .foregroundColor(Color("edenOrange"))
+
                             }
                         }
                     }.onDelete(perform: deleteMood)

@@ -86,7 +86,16 @@ struct AddMoodVIew: View {
                 }
                 Section{
                     Stepper("Water: \(waterValue)", value: $waterValue)
+                        .padding(15)
                         .foregroundColor(Color("edenPlum"))
+                        .overlay{
+                            if(waterValue==1){
+                                Image("waterIcon")
+                            }
+                            else if(waterValue==2){
+                                Image("meh")
+                            }
+                        }
                 }
                 Section(){
                     Text("Diary")
