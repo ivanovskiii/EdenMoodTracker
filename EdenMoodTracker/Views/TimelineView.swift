@@ -14,6 +14,10 @@ struct TimelineView: View {
     @FetchRequest(sortDescriptors: [SortDescriptor(\.date, order: .reverse)]) var mood: FetchedResults<MoodEntry>
     
     @State private var showingAddView = false
+
+    let dateFormatter = DateFormatter()
+    
+    @State private var date = Date.now.formatted(date: .complete, time: .omitted)
     
     var body: some View {
         NavigationView{
@@ -28,6 +32,8 @@ struct TimelineView: View {
                                 Text(mood.mood!)
                                     .fontWeight(.bold)
                                     .foregroundColor(Color("edenBlue"))
+                                let date = mood.date!.formatted(date: .abbreviated, time: .omitted)
+                                Text(date)
                             }
                             if(mood.mood=="Bad"){
                                 Image("bad")
@@ -36,6 +42,8 @@ struct TimelineView: View {
                                 Text(mood.mood!)
                                     .fontWeight(.bold)
                                     .foregroundColor(Color("edenBabyBlue"))
+                                let date = mood.date!.formatted(date: .abbreviated, time: .omitted)
+                                Text(date)
 
                             }
                             if(mood.mood=="Meh"){
@@ -45,6 +53,8 @@ struct TimelineView: View {
                                 Text(mood.mood!)
                                     .fontWeight(.bold)
                                     .foregroundColor(Color("edenDarkMint"))
+                                let date = mood.date!.formatted(date: .abbreviated, time: .omitted)
+                                Text(date)
 
                             }
                             if(mood.mood=="Good"){
@@ -54,6 +64,8 @@ struct TimelineView: View {
                                 Text(mood.mood!)
                                     .fontWeight(.bold)
                                     .foregroundColor(Color("edenPeach"))
+                                let date = mood.date!.formatted(date: .abbreviated, time: .omitted)
+                                Text(date)
 
                             }
                             if(mood.mood=="Amazing"){
@@ -63,6 +75,8 @@ struct TimelineView: View {
                                 Text(mood.mood!)
                                     .fontWeight(.bold)
                                     .foregroundColor(Color("edenOrange"))
+                                let date = mood.date!.formatted(date: .abbreviated, time: .omitted)
+                                Text(date)
 
                             }
                         }
