@@ -24,13 +24,14 @@ struct TimelineView: View {
             VStack(alignment: .leading){
                 List{
                     ForEach(mood) { mood in
-                        NavigationLink(destination: Text("\(mood.mood ?? "Mood")")) {
+                        NavigationLink(destination: EditMoodView(moodEntry: mood)) {
                             if(mood.mood=="Terrible"){
                                 Image("terrible")
                                     .resizable()
                                     .frame(maxWidth: 70, maxHeight: 70)
                                 Text(mood.mood!)
-                                    .fontWeight(.bold)
+                                    .fontWeight(.black)
+                                    .font(.system(size: 24))
                                     .foregroundColor(Color("edenBlue"))
                                 let date = mood.date!.formatted(date: .abbreviated, time: .omitted)
                                 Text(date)
@@ -40,7 +41,8 @@ struct TimelineView: View {
                                     .resizable()
                                     .frame(maxWidth: 70, maxHeight: 70)
                                 Text(mood.mood!)
-                                    .fontWeight(.bold)
+                                    .fontWeight(.black)
+                                    .font(.system(size: 24))
                                     .foregroundColor(Color("edenBabyBlue"))
                                 let date = mood.date!.formatted(date: .abbreviated, time: .omitted)
                                 Text(date)
@@ -51,7 +53,8 @@ struct TimelineView: View {
                                     .resizable()
                                     .frame(maxWidth: 70, maxHeight: 70)
                                 Text(mood.mood!)
-                                    .fontWeight(.bold)
+                                    .fontWeight(.black)
+                                    .font(.system(size: 24))
                                     .foregroundColor(Color("edenDarkMint"))
                                 let date = mood.date!.formatted(date: .abbreviated, time: .omitted)
                                 Text(date)
@@ -62,7 +65,8 @@ struct TimelineView: View {
                                     .resizable()
                                     .frame(maxWidth: 70, maxHeight: 70)
                                 Text(mood.mood!)
-                                    .fontWeight(.bold)
+                                    .fontWeight(.black)
+                                    .font(.system(size: 24))
                                     .foregroundColor(Color("edenPeach"))
                                 let date = mood.date!.formatted(date: .abbreviated, time: .omitted)
                                 Text(date)
@@ -73,7 +77,8 @@ struct TimelineView: View {
                                     .resizable()
                                     .frame(maxWidth: 70, maxHeight: 70)
                                 Text(mood.mood!)
-                                    .fontWeight(.bold)
+                                    .fontWeight(.black)
+                                    .font(.system(size: 24))
                                     .foregroundColor(Color("edenOrange"))
                                 let date = mood.date!.formatted(date: .abbreviated, time: .omitted)
                                 Text(date)
