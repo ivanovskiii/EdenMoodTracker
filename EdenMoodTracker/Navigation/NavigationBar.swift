@@ -22,6 +22,7 @@ struct NavigationBar: View {
             .frame(height: 100)
             .frame(maxHeight: .infinity, alignment: .top)
     }
+    
 }
 
 struct NavigationBar_Previews: PreviewProvider {

@@ -40,7 +40,7 @@ class MoodEntryController: ObservableObject{
     }
     
     func editMood(moodEntry: MoodEntry, mood: String, water: Int16, diaryEntry: String, date: Date, context: NSManagedObjectContext){
-        moodEntry.date = Date()
+        moodEntry.date = date
         moodEntry.mood = mood
         moodEntry.water = water
         moodEntry.diaryEntry = diaryEntry
