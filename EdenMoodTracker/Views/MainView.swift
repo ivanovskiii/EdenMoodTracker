@@ -1,0 +1,35 @@
+//
+//  MainView.swift
+//  EdenMoodTracker
+//
+//  Created by Gorjan Ivanovski on 1.2.23.
+//
+
+import SwiftUI
+
+struct MainView: View {
+    var body: some View {
+            TabView{
+                ContentView()
+                    .tabItem {
+                        Label("Home", systemImage: "smiley")
+                    }
+                TimelineView()
+                    .tabItem{
+                        Label("Timeline", systemImage: "chart.xyaxis.line")
+                    }
+                YouView()
+                    .tabItem{
+                        Label("You", systemImage: "person")
+                    }
+            }
+            .overlay(NavigationBar())
+            .tint(Color("edenIndigo"))
+    }
+}
+
+struct MainView_Previews: PreviewProvider {
+    static var previews: some View {
+        MainView()
+    }
+}

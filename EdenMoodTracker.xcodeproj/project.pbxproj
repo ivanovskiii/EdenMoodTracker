@@ -1,0 +1,676 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1D328FA0298A86D000FBAB4B /* EdenMoodTrackerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D328F9F298A86D000FBAB4B /* EdenMoodTrackerApp.swift */; };
+		1D328FA4298A86D300FBAB4B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1D328FA3298A86D300FBAB4B /* Assets.xcassets */; };
+		1D328FA7298A86D300FBAB4B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1D328FA6298A86D300FBAB4B /* Preview Assets.xcassets */; };
+		1D328FA9298A86D300FBAB4B /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D328FA8298A86D300FBAB4B /* Persistence.swift */; };
+		1D328FAC298A86D300FBAB4B /* EdenMoodTracker.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1D328FAA298A86D300FBAB4B /* EdenMoodTracker.xcdatamodeld */; };
+		1D328FB6298A86D300FBAB4B /* EdenMoodTrackerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D328FB5298A86D300FBAB4B /* EdenMoodTrackerTests.swift */; };
+		1D328FC0298A86D300FBAB4B /* EdenMoodTrackerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D328FBF298A86D300FBAB4B /* EdenMoodTrackerUITests.swift */; };
+		1D328FC2298A86D300FBAB4B /* EdenMoodTrackerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D328FC1298A86D300FBAB4B /* EdenMoodTrackerUITestsLaunchTests.swift */; };
+		1DB5A475298D7A1D005FFAB1 /* MoodRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DB5A474298D7A1D005FFAB1 /* MoodRowView.swift */; };
+		1DCA8BBB298B1DB700259759 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DCA8BBA298B1DB700259759 /* MainView.swift */; };
+		1DCA8BC3298B1F6B00259759 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DCA8BC2298B1F6B00259759 /* ContentView.swift */; };
+		1DCA8BC5298B1FEE00259759 /* YouView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DCA8BC4298B1FEE00259759 /* YouView.swift */; };
+		1DCA8BCA298B264D00259759 /* NavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DCA8BC9298B264D00259759 /* NavigationBar.swift */; };
+		1DCA8BCC298B326A00259759 /* TimelineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DCA8BCB298B326A00259759 /* TimelineView.swift */; };
+		1DCA8BD5298BF9E400259759 /* MoodEntryController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DCA8BD4298BF9E400259759 /* MoodEntryController.swift */; };
+		1DF947E7298C138700722A5A /* AddMoodVIew.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DF947E6298C138700722A5A /* AddMoodVIew.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1D328FB2298A86D300FBAB4B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1D328F94298A86CF00FBAB4B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1D328F9B298A86D000FBAB4B;
+			remoteInfo = EdenMoodTracker;
+		};
+		1D328FBC298A86D300FBAB4B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1D328F94298A86CF00FBAB4B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1D328F9B298A86D000FBAB4B;
+			remoteInfo = EdenMoodTracker;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1D328F9C298A86D000FBAB4B /* EdenMoodTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EdenMoodTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1D328F9F298A86D000FBAB4B /* EdenMoodTrackerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EdenMoodTrackerApp.swift; sourceTree = "<group>"; };
+		1D328FA3298A86D300FBAB4B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1D328FA6298A86D300FBAB4B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		1D328FA8298A86D300FBAB4B /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		1D328FAB298A86D300FBAB4B /* EdenMoodTracker.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = EdenMoodTracker.xcdatamodel; sourceTree = "<group>"; };
+		1D328FB1298A86D300FBAB4B /* EdenMoodTrackerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EdenMoodTrackerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1D328FB5298A86D300FBAB4B /* EdenMoodTrackerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EdenMoodTrackerTests.swift; sourceTree = "<group>"; };
+		1D328FBB298A86D300FBAB4B /* EdenMoodTrackerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EdenMoodTrackerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1D328FBF298A86D300FBAB4B /* EdenMoodTrackerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EdenMoodTrackerUITests.swift; sourceTree = "<group>"; };
+		1D328FC1298A86D300FBAB4B /* EdenMoodTrackerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EdenMoodTrackerUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		1D360E74298D91100040494C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		1DB5A474298D7A1D005FFAB1 /* MoodRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoodRowView.swift; sourceTree = "<group>"; };
+		1DCA8BBA298B1DB700259759 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		1DCA8BC2298B1F6B00259759 /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		1DCA8BC4298B1FEE00259759 /* YouView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YouView.swift; sourceTree = "<group>"; };
+		1DCA8BC9298B264D00259759 /* NavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBar.swift; sourceTree = "<group>"; };
+		1DCA8BCB298B326A00259759 /* TimelineView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimelineView.swift; sourceTree = "<group>"; };
+		1DCA8BD4298BF9E400259759 /* MoodEntryController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoodEntryController.swift; sourceTree = "<group>"; };
+		1DF947E6298C138700722A5A /* AddMoodVIew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddMoodVIew.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1D328F99298A86D000FBAB4B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1D328FAE298A86D300FBAB4B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1D328FB8298A86D300FBAB4B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1D328F93298A86CF00FBAB4B = {
+			isa = PBXGroup;
+			children = (
+				1D328F9E298A86D000FBAB4B /* EdenMoodTracker */,
+				1D328FB4298A86D300FBAB4B /* EdenMoodTrackerTests */,
+				1D328FBE298A86D300FBAB4B /* EdenMoodTrackerUITests */,
+				1D328F9D298A86D000FBAB4B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1D328F9D298A86D000FBAB4B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1D328F9C298A86D000FBAB4B /* EdenMoodTracker.app */,
+				1D328FB1298A86D300FBAB4B /* EdenMoodTrackerTests.xctest */,
+				1D328FBB298A86D300FBAB4B /* EdenMoodTrackerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1D328F9E298A86D000FBAB4B /* EdenMoodTracker */ = {
+			isa = PBXGroup;
+			children = (
+				1D360E74298D91100040494C /* Info.plist */,
+				1DCA8BD6298BFCE600259759 /* Views */,
+				1DCA8BCD298BF84600259759 /* DataModel */,
+				1DCA8BC8298B25E900259759 /* Navigation */,
+				1D328F9F298A86D000FBAB4B /* EdenMoodTrackerApp.swift */,
+				1D328FA3298A86D300FBAB4B /* Assets.xcassets */,
+				1D328FA8298A86D300FBAB4B /* Persistence.swift */,
+				1D328FA5298A86D300FBAB4B /* Preview Content */,
+			);
+			path = EdenMoodTracker;
+			sourceTree = "<group>";
+		};
+		1D328FA5298A86D300FBAB4B /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				1D328FA6298A86D300FBAB4B /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		1D328FB4298A86D300FBAB4B /* EdenMoodTrackerTests */ = {
+			isa = PBXGroup;
+			children = (
+				1D328FB5298A86D300FBAB4B /* EdenMoodTrackerTests.swift */,
+			);
+			path = EdenMoodTrackerTests;
+			sourceTree = "<group>";
+		};
+		1D328FBE298A86D300FBAB4B /* EdenMoodTrackerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				1D328FBF298A86D300FBAB4B /* EdenMoodTrackerUITests.swift */,
+				1D328FC1298A86D300FBAB4B /* EdenMoodTrackerUITestsLaunchTests.swift */,
+			);
+			path = EdenMoodTrackerUITests;
+			sourceTree = "<group>";
+		};
+		1DCA8BC8298B25E900259759 /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				1DCA8BC9298B264D00259759 /* NavigationBar.swift */,
+			);
+			path = Navigation;
+			sourceTree = "<group>";
+		};
+		1DCA8BCD298BF84600259759 /* DataModel */ = {
+			isa = PBXGroup;
+			children = (
+				1D328FAA298A86D300FBAB4B /* EdenMoodTracker.xcdatamodeld */,
+				1DCA8BD4298BF9E400259759 /* MoodEntryController.swift */,
+			);
+			path = DataModel;
+			sourceTree = "<group>";
+		};
+		1DCA8BD6298BFCE600259759 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				1DCA8BC2298B1F6B00259759 /* ContentView.swift */,
+				1DCA8BCB298B326A00259759 /* TimelineView.swift */,
+				1DCA8BBA298B1DB700259759 /* MainView.swift */,
+				1DCA8BC4298B1FEE00259759 /* YouView.swift */,
+				1DF947E6298C138700722A5A /* AddMoodVIew.swift */,
+				1DB5A474298D7A1D005FFAB1 /* MoodRowView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1D328F9B298A86D000FBAB4B /* EdenMoodTracker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1D328FC5298A86D400FBAB4B /* Build configuration list for PBXNativeTarget "EdenMoodTracker" */;
+			buildPhases = (
+				1D328F98298A86D000FBAB4B /* Sources */,
+				1D328F99298A86D000FBAB4B /* Frameworks */,
+				1D328F9A298A86D000FBAB4B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = EdenMoodTracker;
+			productName = EdenMoodTracker;
+			productReference = 1D328F9C298A86D000FBAB4B /* EdenMoodTracker.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1D328FB0298A86D300FBAB4B /* EdenMoodTrackerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1D328FC8298A86D400FBAB4B /* Build configuration list for PBXNativeTarget "EdenMoodTrackerTests" */;
+			buildPhases = (
+				1D328FAD298A86D300FBAB4B /* Sources */,
+				1D328FAE298A86D300FBAB4B /* Frameworks */,
+				1D328FAF298A86D300FBAB4B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1D328FB3298A86D300FBAB4B /* PBXTargetDependency */,
+			);
+			name = EdenMoodTrackerTests;
+			productName = EdenMoodTrackerTests;
+			productReference = 1D328FB1298A86D300FBAB4B /* EdenMoodTrackerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		1D328FBA298A86D300FBAB4B /* EdenMoodTrackerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1D328FCB298A86D400FBAB4B /* Build configuration list for PBXNativeTarget "EdenMoodTrackerUITests" */;
+			buildPhases = (
+				1D328FB7298A86D300FBAB4B /* Sources */,
+				1D328FB8298A86D300FBAB4B /* Frameworks */,
+				1D328FB9298A86D300FBAB4B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1D328FBD298A86D300FBAB4B /* PBXTargetDependency */,
+			);
+			name = EdenMoodTrackerUITests;
+			productName = EdenMoodTrackerUITests;
+			productReference = 1D328FBB298A86D300FBAB4B /* EdenMoodTrackerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1D328F94298A86CF00FBAB4B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1410;
+				LastUpgradeCheck = 1410;
+				TargetAttributes = {
+					1D328F9B298A86D000FBAB4B = {
+						CreatedOnToolsVersion = 14.1;
+					};
+					1D328FB0298A86D300FBAB4B = {
+						CreatedOnToolsVersion = 14.1;
+						TestTargetID = 1D328F9B298A86D000FBAB4B;
+					};
+					1D328FBA298A86D300FBAB4B = {
+						CreatedOnToolsVersion = 14.1;
+						TestTargetID = 1D328F9B298A86D000FBAB4B;
+					};
+				};
+			};
+			buildConfigurationList = 1D328F97298A86CF00FBAB4B /* Build configuration list for PBXProject "EdenMoodTracker" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1D328F93298A86CF00FBAB4B;
+			productRefGroup = 1D328F9D298A86D000FBAB4B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1D328F9B298A86D000FBAB4B /* EdenMoodTracker */,
+				1D328FB0298A86D300FBAB4B /* EdenMoodTrackerTests */,
+				1D328FBA298A86D300FBAB4B /* EdenMoodTrackerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1D328F9A298A86D000FBAB4B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D328FA7298A86D300FBAB4B /* Preview Assets.xcassets in Resources */,
+				1D328FA4298A86D300FBAB4B /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1D328FAF298A86D300FBAB4B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1D328FB9298A86D300FBAB4B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1D328F98298A86D000FBAB4B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1DCA8BC5298B1FEE00259759 /* YouView.swift in Sources */,
+				1DF947E7298C138700722A5A /* AddMoodVIew.swift in Sources */,
+				1D328FA9298A86D300FBAB4B /* Persistence.swift in Sources */,
+				1DCA8BC3298B1F6B00259759 /* ContentView.swift in Sources */,
+				1DCA8BCA298B264D00259759 /* NavigationBar.swift in Sources */,
+				1D328FA0298A86D000FBAB4B /* EdenMoodTrackerApp.swift in Sources */,
+				1DCA8BBB298B1DB700259759 /* MainView.swift in Sources */,
+				1DCA8BD5298BF9E400259759 /* MoodEntryController.swift in Sources */,
+				1DB5A475298D7A1D005FFAB1 /* MoodRowView.swift in Sources */,
+				1DCA8BCC298B326A00259759 /* TimelineView.swift in Sources */,
+				1D328FAC298A86D300FBAB4B /* EdenMoodTracker.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1D328FAD298A86D300FBAB4B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D328FB6298A86D300FBAB4B /* EdenMoodTrackerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1D328FB7298A86D300FBAB4B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D328FC2298A86D300FBAB4B /* EdenMoodTrackerUITestsLaunchTests.swift in Sources */,
+				1D328FC0298A86D300FBAB4B /* EdenMoodTrackerUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1D328FB3298A86D300FBAB4B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1D328F9B298A86D000FBAB4B /* EdenMoodTracker */;
+			targetProxy = 1D328FB2298A86D300FBAB4B /* PBXContainerItemProxy */;
+		};
+		1D328FBD298A86D300FBAB4B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1D328F9B298A86D000FBAB4B /* EdenMoodTracker */;
+			targetProxy = 1D328FBC298A86D300FBAB4B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1D328FC3298A86D400FBAB4B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		1D328FC4298A86D400FBAB4B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1D328FC6298A86D400FBAB4B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"EdenMoodTracker/Preview Content\"";
+				DEVELOPMENT_TEAM = 9L6RNBKCUL;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = EdenMoodTracker/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Eden;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIStatusBarStyle = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = calculatorSwiftUi.EdenMoodTracker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		1D328FC7298A86D400FBAB4B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"EdenMoodTracker/Preview Content\"";
+				DEVELOPMENT_TEAM = 9L6RNBKCUL;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = EdenMoodTracker/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Eden;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIStatusBarStyle = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = calculatorSwiftUi.EdenMoodTracker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		1D328FC9298A86D400FBAB4B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = calculatorSwiftUi.EdenMoodTrackerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EdenMoodTracker.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/EdenMoodTracker";
+			};
+			name = Debug;
+		};
+		1D328FCA298A86D400FBAB4B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = calculatorSwiftUi.EdenMoodTrackerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EdenMoodTracker.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/EdenMoodTracker";
+			};
+			name = Release;
+		};
+		1D328FCC298A86D400FBAB4B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = calculatorSwiftUi.EdenMoodTrackerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = EdenMoodTracker;
+			};
+			name = Debug;
+		};
+		1D328FCD298A86D400FBAB4B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = calculatorSwiftUi.EdenMoodTrackerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = EdenMoodTracker;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1D328F97298A86CF00FBAB4B /* Build configuration list for PBXProject "EdenMoodTracker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1D328FC3298A86D400FBAB4B /* Debug */,
+				1D328FC4298A86D400FBAB4B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1D328FC5298A86D400FBAB4B /* Build configuration list for PBXNativeTarget "EdenMoodTracker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1D328FC6298A86D400FBAB4B /* Debug */,
+				1D328FC7298A86D400FBAB4B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1D328FC8298A86D400FBAB4B /* Build configuration list for PBXNativeTarget "EdenMoodTrackerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1D328FC9298A86D400FBAB4B /* Debug */,
+				1D328FCA298A86D400FBAB4B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1D328FCB298A86D400FBAB4B /* Build configuration list for PBXNativeTarget "EdenMoodTrackerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1D328FCC298A86D400FBAB4B /* Debug */,
+				1D328FCD298A86D400FBAB4B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		1D328FAA298A86D300FBAB4B /* EdenMoodTracker.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				1D328FAB298A86D300FBAB4B /* EdenMoodTracker.xcdatamodel */,
+			);
+			currentVersion = 1D328FAB298A86D300FBAB4B /* EdenMoodTracker.xcdatamodel */;
+			name = EdenMoodTracker.xcdatamodeld;
+			path = ../EdenMoodTracker.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 1D328F94298A86CF00FBAB4B /* Project object */;
+}
