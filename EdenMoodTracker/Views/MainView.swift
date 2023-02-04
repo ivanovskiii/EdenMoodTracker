@@ -23,7 +23,12 @@ struct MainView: View {
                         Label("You", systemImage: "person")
                     }
             }
-            .overlay(NavigationBar())
+            .overlay(){
+                ZStack{
+                    NavigationBar()
+                }
+
+            }
             .tint(Color("edenIndigo"))
     }
 }

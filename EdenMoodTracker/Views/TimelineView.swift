@@ -85,7 +85,8 @@ struct TimelineView: View {
 
                             }
                         }
-                    }.onDelete(perform: deleteMood)
+                    }
+                    .onDelete(perform: deleteMood)
                 }
             }.toolbar{
                 ToolbarItem(placement: .bottomBar){

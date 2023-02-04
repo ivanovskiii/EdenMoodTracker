@@ -21,8 +21,9 @@ struct YouView: View {
             Color.indigo
             
         }
-        .frame(maxWidth: .infinity, alignment: .leading)
-        .padding(30)
+        .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .leading)
+        .padding(50)
+        .aspectRatio(contentMode: .fit)
     }
 }
 

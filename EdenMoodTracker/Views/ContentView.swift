@@ -7,6 +7,7 @@
 
 import SwiftUI
 import CoreData
+import RiveRuntime
 
 struct ContentView: View {
     
@@ -15,6 +16,9 @@ struct ContentView: View {
     var body: some View {
         
         ZStack {
+            RiveViewModel(fileName: "shapes").view()
+                .ignoresSafeArea()
+                .blur(radius: 10)
             ZStack{
                 Circle()
                     .foregroundColor(Color.clear)

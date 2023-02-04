@@ -16,7 +16,6 @@ struct EditMoodView: View {
     var body: some View {
         
         VStack {
-            Spacer()
             
             Form{
 
