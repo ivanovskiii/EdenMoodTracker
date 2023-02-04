@@ -1,14 +1,6 @@
-//
-//  EditMoodView.swift
-//  EdenMoodTracker
-//
-//  Created by Gorjan Ivanovski on 3.2.23.
-//
-
 import SwiftUI
 
 struct EditMoodView: View {
-    
     @Environment (\.managedObjectContext) var ManagedObjectContext
     @Environment(\.dismiss) var dismiss
     
@@ -20,8 +12,6 @@ struct EditMoodView: View {
     
     @State private var selectedIdx = 2
     @State private var options = ["Terrible", "Bad", "Meh", "Good", "Amazing"]
-    @State private var date = Date.now.formatted(date: .complete, time: .omitted)
-    
     
     var body: some View {
         
@@ -30,7 +20,8 @@ struct EditMoodView: View {
             Form{
                 
                 Section() {
-                    Text("Mood Log for \(date)")
+                    let date = moodEntry.date!.formatted(date: .complete, time: .omitted)
+                    Text("Update Mood Log for \(date)")
                         .fontWeight(.bold)
                         .multilineTextAlignment(.center)
                         .frame(maxWidth: .infinity)
@@ -88,7 +79,7 @@ struct EditMoodView: View {
                     }.pickerStyle(SegmentedPickerStyle())
                 }
                 Section{
-                    Stepper("Water: \(moodEntry.water)", value: $waterValue)
+                    Stepper("Water: \(waterValue)", value: $waterValue)
                         .padding(15)
                         .foregroundColor(Color("edenPlum"))
                         .overlay{
@@ -105,12 +96,12 @@ struct EditMoodView: View {
                         .fontWeight(.bold)
                         .foregroundColor(Color("edenPlum"))
                         .frame(maxWidth: .infinity)
-                    TextEditor("\(moodEntry.diaryEntry)", text: $diaryEntry)
+                    TextEditor(text: $diaryEntry)
                         .frame(minHeight: 200, maxHeight: 200)
                 }
                 HStack{
-                    Button("Update Mood Log"){
-                        MoodEntryController().editMood(moodEntry: moodEntry, mood: options[selectedIdx], water: waterValue, diaryEntry: diaryEntry, date: Date.now, context: ManagedObjectContext)
+                    Button("Update Mood"){
+                        MoodEntryController().editMood(moodEntry: moodEntry, mood: options[selectedIdx], water: waterValue, diaryEntry: diaryEntry, date: moodEntry.date!, context: ManagedObjectContext)
                         dismiss()
                     }
                 }.frame(maxWidth: .infinity)
