@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		1D2298D4298DC59900C4FA0A /* EditMoodView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D2298D3298DC59900C4FA0A /* EditMoodView.swift */; };
 		1D328FA0298A86D000FBAB4B /* EdenMoodTrackerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D328F9F298A86D000FBAB4B /* EdenMoodTrackerApp.swift */; };
-		1D328FA4298A86D300FBAB4B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1D328FA3298A86D300FBAB4B /* Assets.xcassets */; };
 		1D328FA7298A86D300FBAB4B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1D328FA6298A86D300FBAB4B /* Preview Assets.xcassets */; };
 		1D328FA9298A86D300FBAB4B /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D328FA8298A86D300FBAB4B /* Persistence.swift */; };
 		1D328FAC298A86D300FBAB4B /* EdenMoodTracker.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1D328FAA298A86D300FBAB4B /* EdenMoodTracker.xcdatamodeld */; };
@@ -24,6 +23,7 @@
 		1DCA8BCC298B326A00259759 /* TimelineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DCA8BCB298B326A00259759 /* TimelineView.swift */; };
 		1DCA8BD5298BF9E400259759 /* MoodEntryController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DCA8BD4298BF9E400259759 /* MoodEntryController.swift */; };
 		1DF947E7298C138700722A5A /* AddMoodVIew.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DF947E6298C138700722A5A /* AddMoodVIew.swift */; };
+		1DFBE75C298F12360078D614 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1DFBE75B298F12360078D614 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,7 +47,6 @@
 		1D2298D3298DC59900C4FA0A /* EditMoodView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditMoodView.swift; sourceTree = "<group>"; };
 		1D328F9C298A86D000FBAB4B /* EdenMoodTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EdenMoodTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1D328F9F298A86D000FBAB4B /* EdenMoodTrackerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EdenMoodTrackerApp.swift; sourceTree = "<group>"; };
-		1D328FA3298A86D300FBAB4B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1D328FA6298A86D300FBAB4B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		1D328FA8298A86D300FBAB4B /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		1D328FAB298A86D300FBAB4B /* EdenMoodTracker.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = EdenMoodTracker.xcdatamodel; sourceTree = "<group>"; };
@@ -65,6 +64,7 @@
 		1DCA8BCB298B326A00259759 /* TimelineView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimelineView.swift; sourceTree = "<group>"; };
 		1DCA8BD4298BF9E400259759 /* MoodEntryController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoodEntryController.swift; sourceTree = "<group>"; };
 		1DF947E6298C138700722A5A /* AddMoodVIew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddMoodVIew.swift; sourceTree = "<group>"; };
+		1DFBE75B298F12360078D614 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,8 +120,8 @@
 				1DCA8BCD298BF84600259759 /* DataModel */,
 				1DCA8BC8298B25E900259759 /* Navigation */,
 				1D328F9F298A86D000FBAB4B /* EdenMoodTrackerApp.swift */,
-				1D328FA3298A86D300FBAB4B /* Assets.xcassets */,
 				1D328FA8298A86D300FBAB4B /* Persistence.swift */,
+				1DFBE75B298F12360078D614 /* Assets.xcassets */,
 				1D328FA5298A86D300FBAB4B /* Preview Content */,
 			);
 			path = EdenMoodTracker;
@@ -287,8 +287,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1DFBE75C298F12360078D614 /* Assets.xcassets in Resources */,
 				1D328FA7298A86D300FBAB4B /* Preview Assets.xcassets in Resources */,
-				1D328FA4298A86D300FBAB4B /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -89,11 +89,20 @@ struct AddMoodVIew: View {
                         .padding(15)
                         .foregroundColor(Color("edenPlum"))
                         .overlay{
-                            if(waterValue==1){
-                                Image("waterIcon")
+                            if(waterValue==0){
+                                Image("glass_empty")
                             }
-                            else if(waterValue==2){
-                                Image("meh")
+                            else if(waterValue>0 && waterValue<=2){
+                                Image("glass_one_third")
+                            }
+                            else if(waterValue>2 && waterValue<=4){
+                                Image("glass_half")
+                            }
+                            else if(waterValue>4 && waterValue<=6){
+                                Image("glass_almost_full")
+                            }
+                            else if(waterValue>6){
+                                Image("glass_full")
                             }
                         }
                 }
