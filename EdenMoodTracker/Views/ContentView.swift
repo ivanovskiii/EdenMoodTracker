@@ -10,11 +10,21 @@ import CoreData
 
 struct ContentView: View {
     
-    
+    @State private var showingAddView = false
 
     
     var body: some View {
-        Text("SS KRUG MAIN HOME")
+        Button("Log Your Mood for Today"){
+            showingAddView.toggle()
+        }
+        .sheet(isPresented: $showingAddView){
+            AddMoodVIew()
+        }
+        .frame(maxWidth: .infinity)
+        .foregroundColor(Color(.white))
+        .padding()
+        .background(Color("edenIndigo"))
+        .clipShape(Capsule())
     }
     
     struct ContentView_Previews: PreviewProvider{

@@ -85,7 +85,7 @@ struct AddMoodVIew: View {
                     }.pickerStyle(SegmentedPickerStyle())
                 }
                 Section{
-                    Stepper("Water: \(waterValue)", value: $waterValue)
+                    Stepper("Water: \(waterValue)", value: $waterValue, in: 0...50)
                         .padding(15)
                         .foregroundColor(Color("edenPlum"))
                         .overlay{
