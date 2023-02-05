@@ -20,7 +20,7 @@ struct MainView: View {
                     }
                 YouView()
                     .tabItem{
-                        Label("You", systemImage: "person")
+                        Label("Calendar", systemImage: "calendar")
                     }
             }
             .overlay(){

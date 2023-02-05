@@ -23,6 +23,7 @@ struct TimelineView: View {
         NavigationView{
             VStack(alignment: .leading){
                 List{
+                    Text("Test")
                     ForEach(mood) { mood in
                         NavigationLink(destination: EditMoodView(moodEntry: mood)) {
                             if(mood.mood=="Terrible"){
@@ -87,7 +88,7 @@ struct TimelineView: View {
                         }
                     }
                     .onDelete(perform: deleteMood)
-                }
+                }.padding(.top, 70)
             }.toolbar{
                 ToolbarItem(placement: .bottomBar){
                         Button{

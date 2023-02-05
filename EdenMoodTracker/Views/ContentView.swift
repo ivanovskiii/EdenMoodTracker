@@ -15,10 +15,12 @@ struct ContentView: View {
     
     var body: some View {
         
+        
         ZStack {
-            RiveViewModel(fileName: "shapes").view()
+            RiveViewModel(fileName: "shapes_new").view()
                 .ignoresSafeArea()
-                .blur(radius: 10)
+                .blur(radius: 25)
+                .aspectRatio(contentMode: .fill)
             ZStack{
                 Circle()
                     .foregroundColor(Color.clear)
@@ -55,6 +57,19 @@ struct ContentView: View {
                     }
                 }
             }
+            ZStack{
+                
+                Text("\"Whatever we expect with confidence becomes our own self-fulfilling prophecy.\"")
+                    .multilineTextAlignment(.center)
+                    .frame(maxWidth: 350, maxHeight: 120)
+                    .fontWeight(.bold)
+                    .foregroundColor(Color("edenLavender"))
+                    .background(
+                        Color.white
+                            .blur(radius: 35)
+                    )
+
+            }.padding(.top, 500)
         }
     }
     
