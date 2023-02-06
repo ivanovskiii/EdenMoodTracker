@@ -9,9 +9,57 @@ import SwiftUI
 import CoreData
 import RiveRuntime
 
+struct Quote: Decodable{
+    let q: String
+    let a: String
+}
+
+class QuoteViewModel: ObservableObject{
+    
+    @Published var quote: String = ""
+    @Published var author: String = ""
+    
+    func fetch(){
+        let request = NSMutableURLRequest(url: NSURL(string: "https://zenquotes.io/api/random")! as URL,
+                                                cachePolicy: .useProtocolCachePolicy,
+                                            timeoutInterval: 10.0)
+        request.httpMethod = "GET"
+        let session = URLSession.shared
+        let dataTask = session.dataTask(with: request as URLRequest, completionHandler: { (data, response, error) -> Void in
+            if (error != nil) {
+                print(error!)
+            } else {
+                let httpResponse = response as? HTTPURLResponse
+                print(httpResponse!)
+
+                let str = String.init(data: data!, encoding: .utf8)
+                print(str!)
+
+                let decoder = JSONDecoder()
+                do{
+                    let quoteDecoded = try decoder.decode([Quote].self, from: data!)
+                    self.quote =  quoteDecoded.first!.q
+                    self.author =  quoteDecoded.first!.a
+
+                } catch{
+                    print(String(describing: error))
+                }
+
+            }
+        })
+
+        dataTask.resume()
+            
+        }
+    }
+
 struct ContentView: View {
     
+    @StateObject var quoteViewModel = QuoteViewModel()
+    
     @State private var showingAddView = false
+    
+    @State private var ifQuoteCalled = true
     
     var body: some View {
         
@@ -26,7 +74,7 @@ struct ContentView: View {
                     .foregroundColor(Color.clear)
                     .frame(width: 350)
                     .background(
-                            .ultraThinMaterial,
+                            .thinMaterial,
                             in: Circle())
                 VStack(){
                     Text("Today")
@@ -58,18 +106,32 @@ struct ContentView: View {
                 }
             }
             ZStack{
-                
-                Text("\"Whatever we expect with confidence becomes our own self-fulfilling prophecy.\"")
-                    .multilineTextAlignment(.center)
-                    .frame(maxWidth: 350, maxHeight: 120)
-                    .fontWeight(.bold)
-                    .foregroundColor(Color("edenLavender"))
-                    .background(
-                        Color.white
-                            .blur(radius: 35)
-                    )
-
+                VStack{
+                    Text("\""+quoteViewModel.quote+"\"")
+                        .multilineTextAlignment(.center)
+                        .frame(maxWidth: 350, maxHeight: 120)
+                        .fontWeight(.bold)
+                        .foregroundColor(Color("edenLavender"))
+                        .background(
+                            Color.white
+                                .blur(radius: 35)
+                        )
+                    Text("-"+quoteViewModel.author)
+                        .multilineTextAlignment(.center)
+                        .fontWeight(.regular)
+                        .foregroundColor(Color("edenLavender"))
+                        .background(
+                            Color.white
+                                .blur(radius: 35)
+                        )
+                }
             }.padding(.top, 500)
+                .onAppear(){
+                    if(ifQuoteCalled == true){
+                        quoteViewModel.fetch()
+                    }
+                    ifQuoteCalled = false
+                }
         }
     }
     
