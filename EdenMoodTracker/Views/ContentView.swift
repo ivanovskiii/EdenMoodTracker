@@ -65,74 +65,80 @@ struct ContentView: View {
         
         
         ZStack {
-//            RiveViewModel(fileName: "shapes_new").view()
-//                .ignoresSafeArea()
-//                .blur(radius: 25)
-//                .aspectRatio(contentMode: .fill)
-            ZStack{
-                Circle()
-                    .foregroundColor(Color.clear)
-                    .frame(width: 350)
-                    .background(
-                            .thinMaterial,
-                            in: Circle())
-                VStack(){
-                    Text("Today")
-                        .fontWeight(.light)
-                        .font(.system(size: 24))
-                        .foregroundColor(Color("edenIndigo"))
-                    
-                    Text(Date.now.formatted(.dateTime.weekday(.wide)))
-                        .foregroundColor(Color("edenIndigo"))
-                        .fontWeight(.bold)
-                        .font(.system(size: 36))
-                    
-                    Text(Date.now.formatted(.dateTime.day().month().year()))
-                        .foregroundColor(Color("edenIndigo"))
-                        .fontWeight(.black)
-                        .font(.system(size: 40))
-                    
-                    Button("Log Your Mood for Today"){
-                        showingAddView.toggle()
-                    }
-                    .frame(maxWidth: 200)
-                    .foregroundColor(Color(.white))
-                    .padding()
-                    .background(Color("edenIndigo"))
-                    .clipShape(Capsule())
-                    .sheet(isPresented: $showingAddView){
-                        AddMoodVIew()
-                    }
+            RiveViewModel(fileName: "shapes_new").view()
+                .ignoresSafeArea()
+                .blur(radius: 25)
+                .aspectRatio(contentMode: .fill)
+            GeometryReader{ geometry in
+                ScrollView(.vertical){
+                    ZStack{
+                        Circle()
+                            .foregroundColor(Color.clear)
+                            .frame(width: 350)
+                            .background(
+                                .thinMaterial,
+                                in: Circle())
+                        VStack(){
+                            Text("Today")
+                                .fontWeight(.light)
+                                .font(.system(size: 24))
+                                .foregroundColor(Color("edenIndigo"))
+                            
+                            Text(Date.now.formatted(.dateTime.weekday(.wide)))
+                                .foregroundColor(Color("edenIndigo"))
+                                .fontWeight(.bold)
+                                .font(.system(size: 36))
+                            
+                            Text(Date.now.formatted(.dateTime.day().month().year()))
+                                .foregroundColor(Color("edenIndigo"))
+                                .fontWeight(.black)
+                                .font(.system(size: 40))
+                            
+                            Button("Log Your Mood for Today"){
+                                showingAddView.toggle()
+                            }
+                            .frame(maxWidth: 200)
+                            .foregroundColor(Color(.white))
+                            .padding()
+                            .background(Color("edenIndigo"))
+                            .clipShape(Capsule())
+                            .sheet(isPresented: $showingAddView){
+                                AddMoodVIew()
+                            }
+                        }
+                    ZStack{
+                        VStack{
+                            Text("\""+quoteViewModel.quote+"\"")
+                                .multilineTextAlignment(.center)
+                                .frame(maxWidth: 350)
+                                .padding(.bottom, 10)
+                                .fontWeight(.bold)
+                                .foregroundColor(Color("edenLavender"))
+                                .background(
+                                    Color.white
+                                        .blur(radius: 35)
+                                )
+                            Text("-"+quoteViewModel.author)
+                                .multilineTextAlignment(.center)
+                                .fontWeight(.regular)
+                                .foregroundColor(Color("edenLavender"))
+                                .background(
+                                    Color.white
+                                        .blur(radius: 35)
+                                )
+                        }
+                    }.padding(.top, 600)
+                    .onAppear(){
+                            if(ifQuoteCalled == true){
+                                quoteViewModel.fetch()
+                            }
+                            ifQuoteCalled = false
+                        }
+                    }.padding()
+                        .frame(width: geometry.size.width)
+                        .frame(minHeight: geometry.size.height)
                 }
             }
-            ZStack{
-                VStack{
-                    Text("\""+quoteViewModel.quote+"\"")
-                        .multilineTextAlignment(.center)
-                        .frame(maxWidth: 350)
-                        .padding(.bottom, 10)
-                        .fontWeight(.bold)
-                        .foregroundColor(Color("edenLavender"))
-                        .background(
-                            Color.white
-                                .blur(radius: 35)
-                        )
-                    Text("-"+quoteViewModel.author)
-                        .multilineTextAlignment(.center)
-                        .fontWeight(.regular)
-                        .foregroundColor(Color("edenLavender"))
-                        .background(
-                            Color.white
-                                .blur(radius: 35)
-                        )
-                }
-            }.padding(.top, 500)
-                .onAppear(){
-                    if(ifQuoteCalled == true){
-                        quoteViewModel.fetch()
-                    }
-                    ifQuoteCalled = false
-                }
         }
     }
     
