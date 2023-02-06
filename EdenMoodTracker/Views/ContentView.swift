@@ -65,10 +65,10 @@ struct ContentView: View {
         
         
         ZStack {
-            RiveViewModel(fileName: "shapes_new").view()
-                .ignoresSafeArea()
-                .blur(radius: 25)
-                .aspectRatio(contentMode: .fill)
+//            RiveViewModel(fileName: "shapes_new").view()
+//                .ignoresSafeArea()
+//                .blur(radius: 25)
+//                .aspectRatio(contentMode: .fill)
             ZStack{
                 Circle()
                     .foregroundColor(Color.clear)

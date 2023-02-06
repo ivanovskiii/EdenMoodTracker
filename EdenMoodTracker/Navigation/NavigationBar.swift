@@ -15,11 +15,11 @@ struct NavigationBar: View {
                 .blur(radius: 10)
             Image("edenLogo")
                 .resizable()
-                .frame(width: 115, height: 85)
-                .frame(maxWidth: .infinity, alignment: .leading)
-                .padding(.leading, 25)
+                .frame(width: 90, height: 70)
+                .frame(maxWidth: .infinity, alignment: .top)
+                .padding(.leading, 10)
         }
-            .frame(height: 100)
+            .frame(height: 80)
             .frame(maxHeight: .infinity, alignment: .top)
     }
     

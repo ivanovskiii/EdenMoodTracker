@@ -89,20 +89,21 @@ struct TimelineView: View {
                         }
                     }
                     .onDelete(perform: deleteMood)
-                }.padding(.top, 70)
+                }
             }.toolbar{
                 ToolbarItem(placement: .bottomBar){
-                        Button{
+                        Button(){
                             showingAddView.toggle()
                         } label: {
                             Label("Log Mood", systemImage: "plus.circle")
+                            Text("Log Mood")
                         }
                     }
                 }
                 .sheet(isPresented: $showingAddView){
                     AddMoodVIew()
                 }
-        }
+        }.padding(.top, 70)
         
     }
     

@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1D0919E2299167240018A41B /* CalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D0919E1299167240018A41B /* CalendarView.swift */; };
+		1D1F949B2991B288002DB682 /* LocalNotificationHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D1F949A2991B288002DB682 /* LocalNotificationHandler.swift */; };
 		1D2298D4298DC59900C4FA0A /* EditMoodView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D2298D3298DC59900C4FA0A /* EditMoodView.swift */; };
 		1D328FA0298A86D000FBAB4B /* EdenMoodTrackerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D328F9F298A86D000FBAB4B /* EdenMoodTrackerApp.swift */; };
 		1D328FA7298A86D300FBAB4B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1D328FA6298A86D300FBAB4B /* Preview Assets.xcassets */; };
@@ -49,6 +50,7 @@
 
 /* Begin PBXFileReference section */
 		1D0919E1299167240018A41B /* CalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarView.swift; sourceTree = "<group>"; };
+		1D1F949A2991B288002DB682 /* LocalNotificationHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalNotificationHandler.swift; sourceTree = "<group>"; };
 		1D2298D3298DC59900C4FA0A /* EditMoodView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditMoodView.swift; sourceTree = "<group>"; };
 		1D328F9C298A86D000FBAB4B /* EdenMoodTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EdenMoodTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1D328F9F298A86D000FBAB4B /* EdenMoodTrackerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EdenMoodTrackerApp.swift; sourceTree = "<group>"; };
@@ -100,11 +102,12 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		1D1F94972991A493002DB682 /* API */ = {
+		1D1F94992991B279002DB682 /* Handlers */ = {
 			isa = PBXGroup;
 			children = (
+				1D1F949A2991B288002DB682 /* LocalNotificationHandler.swift */,
 			);
-			path = API;
+			path = Handlers;
 			sourceTree = "<group>";
 		};
 		1D328F93298A86CF00FBAB4B = {
@@ -130,7 +133,7 @@
 		1D328F9E298A86D000FBAB4B /* EdenMoodTracker */ = {
 			isa = PBXGroup;
 			children = (
-				1D1F94972991A493002DB682 /* API */,
+				1D1F94992991B279002DB682 /* Handlers */,
 				1D58C32B298FDBBC00A17996 /* RiveAssets */,
 				1D360E74298D91100040494C /* Info.plist */,
 				1DCA8BD6298BFCE600259759 /* Views */,
@@ -355,6 +358,7 @@
 				1DCA8BCA298B264D00259759 /* NavigationBar.swift in Sources */,
 				1D328FA0298A86D000FBAB4B /* EdenMoodTrackerApp.swift in Sources */,
 				1D0919E2299167240018A41B /* CalendarView.swift in Sources */,
+				1D1F949B2991B288002DB682 /* LocalNotificationHandler.swift in Sources */,
 				1DCA8BBB298B1DB700259759 /* MainView.swift in Sources */,
 				1DCA8BD5298BF9E400259759 /* MoodEntryController.swift in Sources */,
 				1DB5A475298D7A1D005FFAB1 /* MoodRowView.swift in Sources */,

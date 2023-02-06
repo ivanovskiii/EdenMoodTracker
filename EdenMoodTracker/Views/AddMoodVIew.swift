@@ -117,6 +117,8 @@ struct AddMoodVIew: View {
                 HStack{
                     Button("Log Mood"){
                         MoodEntryController().addMood(mood: options[selectedIdx], water: waterValue, diaryEntry: diaryEntry, date: Date.now, context: ManagedObjectContext)
+                        let impactMed = UIImpactFeedbackGenerator(style: .heavy)
+                            impactMed.impactOccurred()
                         dismiss()
                     }
                 }.frame(maxWidth: .infinity)

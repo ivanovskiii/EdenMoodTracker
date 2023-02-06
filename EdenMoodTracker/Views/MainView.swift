@@ -30,6 +30,9 @@ struct MainView: View {
 
             }
             .tint(Color("edenIndigo"))
+        
+        let _ = NotificationHandler.instance.requestAuth()
+        let _ = NotificationHandler.instance.scheduleNotification()
     }
 }
 

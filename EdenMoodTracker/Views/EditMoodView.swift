@@ -135,6 +135,8 @@ struct EditMoodView: View {
                 HStack{
                     Button("Update Mood"){
                         MoodEntryController().editMood(moodEntry: moodEntry, mood: options[selectedIdx], water: waterValue, diaryEntry: diaryEntry, date: moodEntry.date!, context: ManagedObjectContext)
+                        let impactMed = UIImpactFeedbackGenerator(style: .light)
+                            impactMed.impactOccurred()
                         dismiss()
                     }
                 }.frame(maxWidth: .infinity)
@@ -144,7 +146,7 @@ struct EditMoodView: View {
                 .clipShape(Capsule())
             }
             
-        }.padding(.top, 90)
+        }
         
     }
     
