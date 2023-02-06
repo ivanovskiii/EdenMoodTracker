@@ -18,7 +18,7 @@ struct MainView: View {
                     .tabItem{
                         Label("Timeline", systemImage: "chart.xyaxis.line")
                     }
-                YouView()
+                CalendarMoodView()
                     .tabItem{
                         Label("Calendar", systemImage: "calendar")
                     }

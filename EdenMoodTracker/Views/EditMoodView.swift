@@ -144,7 +144,7 @@ struct EditMoodView: View {
                 .clipShape(Capsule())
             }
             
-        }
+        }.padding(.top, 90)
         
     }
     

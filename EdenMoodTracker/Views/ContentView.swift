@@ -109,7 +109,8 @@ struct ContentView: View {
                 VStack{
                     Text("\""+quoteViewModel.quote+"\"")
                         .multilineTextAlignment(.center)
-                        .frame(maxWidth: 350, maxHeight: 120)
+                        .frame(maxWidth: 350)
+                        .padding(.bottom, 10)
                         .fontWeight(.bold)
                         .foregroundColor(Color("edenLavender"))
                         .background(

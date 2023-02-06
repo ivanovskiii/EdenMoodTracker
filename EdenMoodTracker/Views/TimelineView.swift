@@ -23,7 +23,8 @@ struct TimelineView: View {
         NavigationView{
             VStack(alignment: .leading){
                 List{
-                    Text("Test")
+                    Text("All Moods")
+                        .foregroundColor(Color("edenIndigo"))
                     ForEach(mood) { mood in
                         NavigationLink(destination: EditMoodView(moodEntry: mood)) {
                             if(mood.mood=="Terrible"){
