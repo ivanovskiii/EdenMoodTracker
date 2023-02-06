@@ -127,7 +127,7 @@ struct ContentView: View {
                                         .blur(radius: 35)
                                 )
                         }
-                    }.padding(.top, 600)
+                    }.padding(.top, 550)
                     .onAppear(){
                             if(ifQuoteCalled == true){
                                 quoteViewModel.fetch()

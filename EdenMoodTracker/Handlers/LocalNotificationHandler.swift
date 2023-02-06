@@ -11,24 +11,33 @@ import UserNotifications
 class NotificationHandler{
     static let instance = NotificationHandler()
     
-    func requestAuth() {
-        
-        let options: UNAuthorizationOptions = [.alert, .sound]
-        
-        UNUserNotificationCenter.current().requestAuthorization(options: options) { (success, error) in
-            if let error = error{
-                print("Error: \(error)")
-            } else{
-                print("Success!")
+    func requestAuth(){
+        let notificationCenter = UNUserNotificationCenter.current()
+        notificationCenter.getNotificationSettings {settings in
+            switch settings.authorizationStatus {
+            case .authorized:
+                self.scheduleNotification()
+            case .denied:
+                return
+            case .notDetermined:
+                notificationCenter.requestAuthorization(options: [.alert, .sound]){ didAllow, error in
+                    if didAllow {
+                        self.scheduleNotification()
+                    }
+                }
+            default:
+                return
             }
         }
     }
     
     func scheduleNotification(){
+        print("Notification scheduled!")
         let content = UNMutableNotificationContent()
         content.title = "Want to check up on yourself?"
-        content.subtitle = "Open Eden to log your mood!"
+        content.body = "Open Eden to log your mood!"
         content.sound = .default
+        let ident = "night-notif"
         
         let calendar = Calendar.current
         var dateComponents = DateComponents(calendar: calendar, timeZone: TimeZone.current)
@@ -36,9 +45,11 @@ class NotificationHandler{
         dateComponents.minute = 00
         let trigger = UNCalendarNotificationTrigger(dateMatching: dateComponents, repeats: true)
         
-        let request = UNNotificationRequest(identifier: UUID().uuidString,
+        let request = UNNotificationRequest(identifier: ident,
                                             content: content,
                                             trigger: trigger)
+        
+        UNUserNotificationCenter.current().removePendingNotificationRequests(withIdentifiers: [ident])
         UNUserNotificationCenter.current().add(request)
     }
 }

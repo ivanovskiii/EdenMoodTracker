@@ -8,6 +8,13 @@
 import SwiftUI
 
 struct MainView: View {
+    
+    let notificationHandler = NotificationHandler()
+    
+    init (){
+        notificationHandler.requestAuth()
+    }
+    
     var body: some View {
             TabView{
                 ContentView()
@@ -30,9 +37,6 @@ struct MainView: View {
 
             }
             .tint(Color("edenIndigo"))
-        
-        let _ = NotificationHandler.instance.requestAuth()
-        let _ = NotificationHandler.instance.scheduleNotification()
     }
 }
 

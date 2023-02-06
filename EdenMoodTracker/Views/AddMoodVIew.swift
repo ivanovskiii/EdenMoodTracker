@@ -19,6 +19,8 @@ struct AddMoodVIew: View {
     @State private var options = ["Terrible", "Bad", "Meh", "Good", "Amazing"]
     @State private var date = Date.now.formatted(date: .complete, time: .omitted)
     
+    @Namespace private var animation
+    @State private var isFlipped = false
     
     var body: some View {
         
@@ -82,28 +84,31 @@ struct AddMoodVIew: View {
                             Text(self.options[$0])
                                 .foregroundColor(Color("edenPlum"))
                         }
-                    }.pickerStyle(SegmentedPickerStyle())
+                    }
+                    .pickerStyle(SegmentedPickerStyle())
                 }
+                
                 Section{
                     Stepper("Water: \(waterValue)", value: $waterValue, in: 0...50)
+
                         .padding(15)
                         .foregroundColor(Color("edenPlum"))
                         .overlay{
-                            if(waterValue==0){
-                                Image("glass_empty")
-                            }
-                            else if(waterValue>0 && waterValue<=2){
-                                Image("glass_one_third")
-                            }
-                            else if(waterValue>2 && waterValue<=4){
-                                Image("glass_half")
-                            }
-                            else if(waterValue>4 && waterValue<=6){
-                                Image("glass_almost_full")
-                            }
-                            else if(waterValue>6){
-                                Image("glass_full")
-                            }
+                                if(waterValue==0){
+                                    Image("glass_empty")
+                                }
+                                else if(waterValue>0 && waterValue<=2){
+                                    Image("glass_one_third")
+                                }
+                                else if(waterValue>2 && waterValue<=4){
+                                    Image("glass_half")
+                                }
+                                else if(waterValue>4 && waterValue<=6){
+                                    Image("glass_almost_full")
+                                }
+                                else if(waterValue>6){
+                                    Image("glass_full")
+                                }
                         }
                 }
                 Section(){

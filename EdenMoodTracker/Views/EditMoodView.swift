@@ -118,7 +118,7 @@ struct EditMoodView: View {
                             }
                         }
                 }.onAppear(){
-                    var waterExisting = moodEntry.water
+                    let waterExisting = moodEntry.water
                     waterValue = waterExisting
                 }
                 Section(){

@@ -15,7 +15,8 @@ struct NavigationBar: View {
                 .blur(radius: 10)
             Image("edenLogo")
                 .resizable()
-                .frame(width: 90, height: 70)
+                .scaledToFit()
+                .frame(width: 100)
                 .frame(maxWidth: .infinity, alignment: .top)
                 .padding(.leading, 10)
         }
