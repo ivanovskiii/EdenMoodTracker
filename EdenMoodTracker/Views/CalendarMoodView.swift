@@ -2,8 +2,7 @@
 //  CalendarMoodView.swift
 //  EdenMoodTracker
 //
-//  Created by Gorjan Ivanovski on 6.2.23.
-//
+//  Created by Gorjan Ivanovski & Iva Naskovska on 6.2.23.//
 
 import SwiftUI
 import CoreData
@@ -14,8 +13,6 @@ struct CalendarMoodView: View {
         CalendarView(interval: DateInterval(start: .distantPast, end: .distantFuture))
                 .padding(.top, 100)
     }
-    
-    
     
 }
 

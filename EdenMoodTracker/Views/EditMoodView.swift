@@ -1,3 +1,10 @@
+//
+//  EditMoodView.swift
+//  EdenMoodTracker
+//
+//  Created by Gorjan Ivanovski & Iva Naskovska on 6.2.23.
+//
+
 import SwiftUI
 
 struct EditMoodView: View {

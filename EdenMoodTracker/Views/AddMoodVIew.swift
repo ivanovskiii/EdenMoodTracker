@@ -2,7 +2,7 @@
 //  AddMoodVIew.swift
 //  EdenMoodTracker
 //
-//  Created by Gorjan Ivanovski on 2.2.23.
+//  Created by Gorjan Ivanovski & Iva Naskovska on 6.2.23.
 //
 
 import SwiftUI
