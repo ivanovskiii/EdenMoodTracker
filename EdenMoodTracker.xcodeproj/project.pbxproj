@@ -19,6 +19,7 @@
 		1D328FC2298A86D300FBAB4B /* EdenMoodTrackerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D328FC1298A86D300FBAB4B /* EdenMoodTrackerUITestsLaunchTests.swift */; };
 		1D58C32A298FDB9F00A17996 /* RiveRuntime in Frameworks */ = {isa = PBXBuildFile; productRef = 1D58C329298FDB9F00A17996 /* RiveRuntime */; };
 		1D58C32F298FDD1D00A17996 /* shapes.riv in Resources */ = {isa = PBXBuildFile; fileRef = 1D58C32E298FDD1D00A17996 /* shapes.riv */; };
+		1D8F8C042995C71B0095861A /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D8F8C032995C71B0095861A /* Date+Extension.swift */; };
 		1D90ED8E299079870018FB1A /* shapes_new.riv in Resources */ = {isa = PBXBuildFile; fileRef = 1D90ED8D299079870018FB1A /* shapes_new.riv */; };
 		1DA40C5A29914E6000F2300B /* CalendarMoodView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DA40C5929914E6000F2300B /* CalendarMoodView.swift */; };
 		1DB5A475298D7A1D005FFAB1 /* MoodRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DB5A474298D7A1D005FFAB1 /* MoodRowView.swift */; };
@@ -64,6 +65,7 @@
 		1D328FC1298A86D300FBAB4B /* EdenMoodTrackerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EdenMoodTrackerUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		1D360E74298D91100040494C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		1D58C32E298FDD1D00A17996 /* shapes.riv */ = {isa = PBXFileReference; lastKnownFileType = file; path = shapes.riv; sourceTree = "<group>"; };
+		1D8F8C032995C71B0095861A /* Date+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extension.swift"; sourceTree = "<group>"; };
 		1D90ED8D299079870018FB1A /* shapes_new.riv */ = {isa = PBXFileReference; lastKnownFileType = file; path = shapes_new.riv; sourceTree = "<group>"; };
 		1DA40C5929914E6000F2300B /* CalendarMoodView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarMoodView.swift; sourceTree = "<group>"; };
 		1DB5A474298D7A1D005FFAB1 /* MoodRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoodRowView.swift; sourceTree = "<group>"; };
@@ -133,6 +135,7 @@
 		1D328F9E298A86D000FBAB4B /* EdenMoodTracker */ = {
 			isa = PBXGroup;
 			children = (
+				1D8F8C022995C70F0095861A /* Extensions */,
 				1D1F94992991B279002DB682 /* Handlers */,
 				1D58C32B298FDBBC00A17996 /* RiveAssets */,
 				1D360E74298D91100040494C /* Info.plist */,
@@ -179,6 +182,14 @@
 				1D90ED8D299079870018FB1A /* shapes_new.riv */,
 			);
 			path = RiveAssets;
+			sourceTree = "<group>";
+		};
+		1D8F8C022995C70F0095861A /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				1D8F8C032995C71B0095861A /* Date+Extension.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		1DCA8BC8298B25E900259759 /* Navigation */ = {
@@ -356,6 +367,7 @@
 				1D328FA9298A86D300FBAB4B /* Persistence.swift in Sources */,
 				1DCA8BC3298B1F6B00259759 /* ContentView.swift in Sources */,
 				1DCA8BCA298B264D00259759 /* NavigationBar.swift in Sources */,
+				1D8F8C042995C71B0095861A /* Date+Extension.swift in Sources */,
 				1D328FA0298A86D000FBAB4B /* EdenMoodTrackerApp.swift in Sources */,
 				1D0919E2299167240018A41B /* CalendarView.swift in Sources */,
 				1D1F949B2991B288002DB682 /* LocalNotificationHandler.swift in Sources */,
