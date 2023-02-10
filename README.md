@@ -3,4 +3,4 @@
 
 Mood Tracker App for iOS made with SwiftUI -- Mobile Applications Project FCSE Skopje 2023
 
-![](https://github.com/ivanovskiii/EdenMoodTracker/blob/main/previewImages/screen1.png)
+<img src="https://github.com/ivanovskiii/EdenMoodTracker/blob/main/previewImages/screen1.png" width="48">
