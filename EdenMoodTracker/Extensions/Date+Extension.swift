@@ -2,7 +2,7 @@
 //  Date+Extension.swift
 //  EdenMoodTracker
 //
-//  Created by Gorjan Ivanovski on 10.2.23.
+//  Created by Gorjan Ivanovski & Iva Naskovska on 10.2.23.
 //
 
 import Foundation
